@@ -1,0 +1,11 @@
+span:hover {
+    cursor: pointer;
+}
+
+.heart-gray {
+    color: #CCC;
+}
+
+.heart-pink {
+    color: deeppink;
+}

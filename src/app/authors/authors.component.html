@@ -1,0 +1,26 @@
+
+<h2>Authors</h2>
+<button (click)="onAdd()">Add</button>
+<ul>
+    <li *ngFor='let author of authors'>
+        {{author}}
+        <button (click)="onUpdate(author)">Update</button>
+        <button (click)="onRemove(author)">Remove</button>
+    </li>
+</ul>
+
+<hr>
+<button>Save</button><br>
+<button class="btn btn-primary">Save</button>
+
+<br><br>
+<input (keyup)="onKeyUp1($event)" />
+<br><br>
+<input (keyup.enter)="onKeyUp2()" />
+<br><br>
+<input #email1 (keyup.enter)="onKeyUp3(email1.value)" />
+<br><br>
+<input [(ngModel)]="email2" /><br>
+<p>{{email2 | uppercase}}</p>
+<p>{{email2 | summarize}}</p>
+
